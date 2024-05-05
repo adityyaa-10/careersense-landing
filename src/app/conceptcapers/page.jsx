@@ -1,11 +1,16 @@
-
 import Header from './Header'
+import Hero from './Hero'
+import CardSlider from './Slider'
 
 const ConceptCapers = () => {
     return (
-        <div>
-            <Header />
-        </div>
+        <>
+            <div className='max-w-[1600px] mx-auto px-6 lg:px-20'>
+                <Header />
+                <Hero />
+            </div>
+            
+        </>
     )
 }
 

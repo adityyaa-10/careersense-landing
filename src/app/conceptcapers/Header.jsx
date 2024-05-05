@@ -1,27 +1,48 @@
+"use client"
+import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
+
 const Header = () => {
+    const [scrolling, setScrolling] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const isScrolled = window.scrollY > 0;
+            setScrolling(isScrolled);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <header class="text-gray-600 body-font">
-            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-                <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                    </svg>
-                    <span class="ml-3 text-xl">Tailblocks</span>
-                </a>
-                <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-                    <a class="mr-5 hover:text-gray-900">First Link</a>
-                    <a class="mr-5 hover:text-gray-900">Second Link</a>
-                    <a class="mr-5 hover:text-gray-900">Third Link</a>
-                    <a class="mr-5 hover:text-gray-900">Fourth Link</a>
+        <header className={`text-gray-600`}>
+            <div className=" mx-auto flex flex-wrap pt-3 items-center">
+                <button className={`${scrolling ? 'hidden' : 'flex'} font-medium items-center mt-3 mb-4 md:mb-0 text-2xl bg-[#161B32] border-4 border-[#161B32] px-4 py-2 rounded-full text-white tracking-tighter leading-10`}>
+                    BUY THE GAME
+                </button>
+                <nav className="hidden md:ml-auto md:mr-auto md:flex flex-wrap mt-3 items-center text-base justify-center">
+                    <div className="py-3 px-6 flex font-medium items-center mb-4 md:mb-0 text-2xl border-4 border-[#161B32] rounded-full text-[#161B32] tracking-tighter leading-10">
+                        <div className="mx-8">WORK</div>
+                        <div className="mr-8">
+                            <Image src={'/cclogo.png'} width={80} height={80} />
+                        </div>
+                        <div>
+                            <button className="flex font-medium items-center mb-4 md:mb-0 text-2xl bg-[#161B32] border-4 border-[#161B32] px-5 rounded-full text-white tracking-tighter leading-10">
+                                PLAY
+                            </button>
+                        </div>
+                    </div>
                 </nav>
-                <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
+                <button className={`${scrolling ? 'hidden' : 'flex'} font-medium items-center mt-3 mb-4 md:mb-0 text-2xl bg-[#161B32] border-4 border-[#161B32] px-4 py-2 rounded-full text-white tracking-tighter leading-10`}>
+                    BUY THE FONT
                 </button>
             </div>
         </header>
-    )
-}
+    );
+};
 
-export default Header
+export default Header;
