@@ -2,7 +2,7 @@ import HeroHeading from "./HeroHeading";
 
 const Hero = () => {
     return (
-        <section className="my-24 ">
+        <section className="mt-24 ">
             <HeroHeading />
         </section >
     );

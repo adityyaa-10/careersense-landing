@@ -28,7 +28,7 @@ const HeroHeading = () => {
                         you and up to 3 others play as creatives racing to pitch the greatest idea!
                     </p>
                 </div>
-                <div className='px-4'>
+                <div className='px-4 pb-3'>
                     <button className="flex font-medium items-center mt-3 mb-4 md:mb-0 text-2xl bg-[#161B32] border-4 border-[#161B32] px-4 py-2 rounded-full text-white tracking-tighter leading-10">
                         FIND OUT MORE
                     </button>

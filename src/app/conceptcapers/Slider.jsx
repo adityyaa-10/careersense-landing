@@ -17,8 +17,8 @@ function CardSlider() {
         slidesToScroll: 1,
         initialSlide: 0,
         autoplay: true,
-        speed: 1000,
-        autoplaySpeed: 2000,
+        speed: 1500,
+        autoplaySpeed: 0,
         responsive: [
             {
                 breakpoint: 1200,

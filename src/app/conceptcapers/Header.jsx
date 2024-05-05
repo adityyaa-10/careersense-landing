@@ -20,7 +20,7 @@ const Header = () => {
 
     return (
         <header className={`text-gray-600`}>
-            <div className=" mx-auto flex flex-wrap pt-3 items-center">
+            <div className="pt-3 mx-auto flex flex-wrap items-center">
                 <button className={`${scrolling ? 'hidden' : 'flex'} font-medium items-center mt-3 mb-4 md:mb-0 text-2xl bg-[#161B32] border-4 border-[#161B32] px-4 py-2 rounded-full text-white tracking-tighter leading-10`}>
                     BUY THE GAME
                 </button>
