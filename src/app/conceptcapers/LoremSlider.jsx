@@ -3,173 +3,92 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import EachCharacter from "./EachCharacter";
-import Image from "next/image";
 const LoremSlider = () => {
     const settings = {
-        slidesToShow: 15,
-        slidesToScroll: 1,
         infinite: true,
         autoplay: true,
         speed: 2100,
         autoplaySpeed: 0,
         cssEase: 'linear',
         arrows: false,
-        responsive: [
-            {
-                breakpoint: 1400,
-                settings: {
-                    slidesToShow: 14,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: false
-                }
-            },
-            {
-                breakpoint: 1300,
-                settings: {
-                    slidesToShow: 13,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: false
-                }
-            },
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 12,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: false
-                }
-            },
-            {
-                breakpoint: 1100,
-                settings: {
-                    slidesToShow: 10,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: false
-                }
-            },
-            {
-                breakpoint: 1000,
-                settings: {
-                    slidesToShow: 10,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: false
-                }
-            },
-            {
-                breakpoint: 900,
-                settings: {
-                    slidesToShow: 9,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: false
-                }
-            },
-            {
-                breakpoint: 800,
-                settings: {
-                    slidesToShow: 8,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: false
-                }
-            },
-            {
-                breakpoint: 700,
-                settings: {
-                    slidesToShow: 7,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: false
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 6,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: false
-                }
-            },
-            {
-                breakpoint: 400,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: false
-                }
-            },
-        ]
+        variableWidth: true,
+        pauseOnHover: false,
     };
     return (
-        <div className="mb-4 py-16 border-4 border-[#161B32] border-t-0 ">
+        <div className="mb-4 py-11 border-4 border-[#161B32] border-t-0 ">
             <div className="slider-container flex-wrap">
                 <Slider {...settings}>
                     <div>
-                        <EachCharacter char="L" bgColor={'bg-[#9BD5F5]'} />
+                        <EachCharacter char="L" hover={'hover:bg-[#9BD5F5]'} />
                     </div>
                     <div>
-                        <EachCharacter char="O" bgColor={'bg-[#9BD5F5]'} />
+                        <EachCharacter char="O" hover={'hover:bg-[#ff6680]'} />
                     </div>
                     <div>
-                        <EachCharacter char="R" bgColor={'bg-[#9BD5F5]'} />
+                        <EachCharacter char="R" hover={'hover:bg-[#7cff66]'} />
                     </div>
                     <div>
-                        <EachCharacter char="E" bgColor={'bg-[#9BD5F5]'} />
+                        <EachCharacter char="E" hover={'hover:bg-[#ae47b3]'} />
                     </div>
                     <div>
-                        <EachCharacter char="M" bgColor={'bg-[#9BD5F5]'} />
+                        <EachCharacter char="M" hover={'hover:bg-[#fff566]'} />
                     </div>
                     <div>
-                        <EachCharacter char="I" bgColor={'bg-[#9BD5F5]'} />
+                        <EachCharacter char="" />
                     </div>
                     <div>
-                        <EachCharacter char="P" />
+                        <EachCharacter char="I" hover={'hover:bg-[#8c61ff]'} />
                     </div>
                     <div>
-                        <EachCharacter char="S" />
+                        <EachCharacter char="P" hover={'hover:bg-[#f75d59]'} />
                     </div>
                     <div>
-                        <EachCharacter char="U" />
+                        <EachCharacter char="S" hover={'hover:bg-[#ffb0ad]'} />
                     </div>
                     <div>
-                        <EachCharacter char="M" />
+                        <EachCharacter char="U" hover={'hover:bg-[#f79a59]'} />
                     </div>
                     <div>
-                        <EachCharacter char="L" />
+                        <EachCharacter char="M" hover={'hover:bg-[#072448]'} />
                     </div>
                     <div>
-                        <EachCharacter char="O" />
+                        <EachCharacter char="" />
                     </div>
                     <div>
-                        <EachCharacter char="R" />
+                        <EachCharacter char="L" hover={'hover:bg-[#9BD5F5]'} />
                     </div>
                     <div>
-                        <EachCharacter char="E" />
+                        <EachCharacter char="O" hover={'hover:bg-[#ff6680]'} />
                     </div>
                     <div>
-                        <EachCharacter char="M" />
+                        <EachCharacter char="R" hover={'hover:bg-[#7cff66]'} />
                     </div>
                     <div>
-                        <EachCharacter char="I" />
+                        <EachCharacter char="E" hover={'hover:bg-[#ae47b3]'} />
                     </div>
                     <div>
-                        <EachCharacter char="P" />
+                        <EachCharacter char="M" hover={'hover:bg-[#fff566]'} />
                     </div>
                     <div>
-                        <EachCharacter char="S" />
+                        <EachCharacter char="" />
                     </div>
                     <div>
-                        <EachCharacter char="U" />
+                        <EachCharacter char="I" hover={'hover:bg-[#8c61ff]'} />
                     </div>
                     <div>
-                        <EachCharacter char="M" />
+                        <EachCharacter char="P" hover={'hover:bg-[#f75d59]'} />
+                    </div>
+                    <div>
+                        <EachCharacter char="S" hover={'hover:bg-[#ffb0ad]'} />
+                    </div>
+                    <div>
+                        <EachCharacter char="U" hover={'hover:bg-[#f79a59]'} />
+                    </div>
+                    <div>
+                        <EachCharacter char="M" hover={'hover:bg-[#072448]'} />
+                    </div>
+                    <div>
+                        <EachCharacter char="" />
                     </div>
                 </Slider>
             </div>

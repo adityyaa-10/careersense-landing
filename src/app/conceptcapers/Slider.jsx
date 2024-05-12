@@ -7,32 +7,31 @@ import SingleCard from "./SingleCard";
 
 function CardSlider() {
     var settings = {
-        // className: "center",
+        variableWidth: true,
         centerMode: true,
         dots: false,
         arrows: false,
         infinite: true,
         speed: 5000,
-        slidesToShow: 2,
-        slidesToScroll: 1,
         initialSlide: 0,
         autoplay: true,
         speed: 1500,
         autoplaySpeed: 1200,
+        pauseOnHover: false,
     };
     return (
         <div className="slider-container">
             <Slider {...settings}>
-                <div>
+                <div className="mr-4">
                     <img src="/Card1.png" />
                 </div>
-                <div>
+                <div className="mr-4">
                     <img src="/Card1.png" />
                 </div>
-                <div>
+                <div className="mr-4">
                     <img src="/Card1.png" />
                 </div>
-                <div>
+                <div className="mr-4">
                     <img src="/Card1.png" />
                 </div>
 
