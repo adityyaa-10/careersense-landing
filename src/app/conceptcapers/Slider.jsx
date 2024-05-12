@@ -7,71 +7,35 @@ import SingleCard from "./SingleCard";
 
 function CardSlider() {
     var settings = {
-        className: "center",
+        // className: "center",
         centerMode: true,
         dots: false,
         arrows: false,
         infinite: true,
-        speed: 500,
-        slidesToShow: 4,
+        speed: 5000,
+        slidesToShow: 2,
         slidesToScroll: 1,
         initialSlide: 0,
         autoplay: true,
         speed: 1500,
-        autoplaySpeed: 0,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: false
-                }
-            },
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: false
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    initialSlide: 2
-                }
-            }
-        ]
+        autoplaySpeed: 1200,
     };
     return (
         <div className="slider-container">
             <Slider {...settings}>
                 <div>
-                    <SingleCard />
+                    <img src="/Card1.png" />
                 </div>
                 <div>
-                    <SingleCard />
+                    <img src="/Card1.png" />
                 </div>
                 <div>
-                    <SingleCard />
+                    <img src="/Card1.png" />
                 </div>
                 <div>
-                    <SingleCard />
+                    <img src="/Card1.png" />
                 </div>
-                <div>
-                    <SingleCard />
-                </div>
-                <div>
-                    <SingleCard />
-                </div>
-                <div>
-                    <SingleCard />
-                </div>
+
             </Slider>
         </div>
     );
