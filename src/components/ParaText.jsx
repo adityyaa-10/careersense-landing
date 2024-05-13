@@ -2,7 +2,7 @@ import MarqueeSection1 from "./MarqueeSection1";
 import MarqueeSection2 from "./MarqueeSection2";
 const ParaText = () => {
     return (
-        <div className="bg-orange-50 py-24  tracking-tight text-gray-800">
+        <div className="bg-orange-50 py-24 tracking-tight text-gray-800">
             <div className="w-full gap-2 text-center flex flex-wrap justify-center items-center max-w-[845px] mx-auto">
                 <p className="text-[40px] font-semibold leading-[120%] tracking-[-.02em]">It's your career</p>
                 <p className="text-[40px] font-semibold leading-[120%] tracking-[-.02em]"><svg width="51" height="46" viewBox="0 0 51 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +24,7 @@ const ParaText = () => {
                 <p className="text-[40px] font-semibold leading-[120%] tracking-[-.02em]">career goals</p>
                 <p className="size-[50px] font-semibold leading-[120%] tracking-[-.02em]"><img src="/flag.png" alt="" /></p>
             </div>
-            <div className="pt-20 pb-32">
+            <div className="pt-20">
                 <MarqueeSection1 />
                 <div className="mt-5">
                     <MarqueeSection2 />

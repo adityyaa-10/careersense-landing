@@ -5,7 +5,7 @@ const HeroHeading = () => {
 
     return (
         <div className='bg-[#F8E1CB] border-4 h-full border-[#161B32] '>
-            <div className='relative  h-full flex justify-center min-w-full text-center'>
+            <div className='relative h-full flex justify-center min-w-full text-center'>
                 <div className="absolute top-0 left-0 right-0 translate-y-[-50%] flex items-center justify-center text-center">
                     <h1 className='bg-[#161B32] max-w-min md:max-w-full text-white px-6 py-[1.13rem] text-4xl md:text-8xl tracking-tighter leading-[.79em] font-extrabold uppercase rounded-md '>CAREERSENSE</h1>
                 </div>
