@@ -21,10 +21,10 @@ const Header = () => {
     return (
         <header className={`text-gray-600`}>
             <div className="pt-3 mx-auto flex flex-wrap items-center">
-                <button className={`${scrolling ? 'hidden' : 'flex'} font-medium items-center mt-3 mb-4 md:mb-0 text-2xl bg-[#161B32] border-4 border-[#161B32] px-4 py-2 rounded-full text-white tracking-tighter leading-10`}>
+                <button className={`${scrolling ? 'hidden' : 'flex'} hidden lg:flex justify-between font-medium items-center mt-3 mb-4 md:mb-0 text-2xl bg-[#161B32] border-4 border-[#161B32] px-4 py-2 rounded-full text-white tracking-tighter leading-10`}>
                     BUY THE GAME
                 </button>
-                <nav className="hidden md:ml-auto md:mr-auto md:flex flex-wrap mt-3 items-center text-base justify-center">
+                <nav className="mx-auto md:flex flex-wrap mt-5 items-center text-base justify-center">
                     <div className="py-3 px-6 flex font-medium items-center mb-4 md:mb-0 text-2xl border-4 border-[#161B32] rounded-full text-[#161B32] tracking-tighter leading-10">
                         <div className="mx-8">WORK</div>
                         <div className="mr-8">
@@ -37,7 +37,7 @@ const Header = () => {
                         </div>
                     </div>
                 </nav>
-                <button className={`${scrolling ? 'hidden' : 'flex'} font-medium items-center mt-3 mb-4 md:mb-0 text-2xl bg-[#161B32] border-4 border-[#161B32] px-4 py-2 rounded-full text-white tracking-tighter leading-10`}>
+                <button className={`${scrolling ? 'hidden' : 'flex'} hidden lg:flex font-medium items-center mt-3 mb-4 md:mb-0 text-2xl bg-[#161B32] border-4 border-[#161B32] px-4 py-2 rounded-full text-white tracking-tighter leading-10`}>
                     BUY THE FONT
                 </button>
             </div>

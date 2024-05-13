@@ -10,14 +10,14 @@ const HeroHeading = () => {
                     <h1 className='bg-[#161B32] max-w-min md:max-w-full text-white px-6 py-[1.13rem] text-4xl md:text-8xl tracking-tighter leading-[.79em] font-extrabold uppercase rounded-md '>CAREERSENSE</h1>
                 </div>
             </div>
-            <div className='pt-32 pb-24'>
+            <div className='pt-32'>
                 <CardSlider />
             </div>
 
             {/* Content */}
-            <div className='max-w-[1080px] mx-auto px-6 flex flex-col items-center min-h-[30rem]'>
+            <div className='max-w-[1080px] mt-24 mx-auto px-6 flex flex-col items-center'>
                 <div className='max-w-[750px]'>
-                    <p className='px-4 py-11 w-full text-[#161B32] tracking-tight leading-[70px] bg-white border-4 border-[#161B32] rounded text-6xl font-bold text-center '>
+                    <p className='px-4 py-4 lg:py-11 w-full text-[#161B32] tracking-tight leading-[70px] bg-white border-4 border-[#161B32] rounded text-6xl font-bold text-center '>
                         Smarter decisions for
                         better career outcomes
                     </p>
