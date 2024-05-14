@@ -2,9 +2,9 @@ import Image from 'next/image'
 
 const Pricing = () => {
     return (
-        <div className='bg-[#F8E1CB] border-4 h-full border-[#161B32] py-16'>
+        <div className='bg-[#F8E1CB] border-4 h-full border-[#161B32] py-6 sm:py-16'>
 
-            <div className='max-w-[1080px] mx-auto px-6 flex flex-col items-center pb-16'>
+            <div className='max-w-[1080px] mx-auto px-6 flex flex-col items-center pb-6 sm:pb-16'>
                 <div className="flex flex-col items-center justify-center text-black ">
                     <div>
                         Lottie File
@@ -15,7 +15,7 @@ const Pricing = () => {
                     <p className="max-w-[28ch] text-center mt-4 text-xl md:text-2xl tracking-tight">The early adopters have spoken</p>
                 </div>
             </div>
-            <div className="mx-auto px-14">
+            <div className="mx-auto px-4 md:px-14">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
                     <div className="bg-[#fbda5f] p-4 rounded-[16px] flex flex-col">

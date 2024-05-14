@@ -7,16 +7,26 @@ import SingleCard from "./SingleCard";
 
 function CardSlider() {
     var settings = {
-        variableWidth: true,
+        centerMode: true,
         dots: false,
         arrows: false,
         infinite: true,
-        rows: 1,
         speed: 5000,
         autoplay: true,
         speed: 1500,
         autoplaySpeed: 1200,
         pauseOnHover: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
     };
     return (
         <div className="slider-container">
