@@ -4,6 +4,8 @@ import Hero from './Hero'
 import LoremSlider from './LoremSlider'
 import Pricing from './Pricing'
 import Footer from './Footer'
+import ForStudents from './ForStudents'
+import EducatePath from './EducatePath'
 
 const ConceptCapers = () => {
     return (
@@ -17,6 +19,8 @@ const ConceptCapers = () => {
             <ParaText />
             <div className='max-w-[1600px] mx-auto px-6 lg:px-20 pb-24'>
                 <Pricing />
+                <ForStudents />
+                <EducatePath />
                 <div className='mt-24'>
                     <Footer />
                 </div>

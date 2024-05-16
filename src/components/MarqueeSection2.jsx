@@ -19,7 +19,7 @@ function MarqueeSection1() {
         centerPadding: "20px",
     };
     return (
-        <div className="">
+        <div className="mt-4 sm:mt-7">
             <Slider {...settings}>
 
                 <div className="pl-4">

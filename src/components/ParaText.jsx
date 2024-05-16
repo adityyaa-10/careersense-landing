@@ -26,9 +26,9 @@ const ParaText = () => {
             </div>
             <div className="pt-20">
                 <MarqueeSection1 />
-                <div className="mt-5">
+                
                     <MarqueeSection2 />
-                </div>
+
             </div>
         </div>
     );
