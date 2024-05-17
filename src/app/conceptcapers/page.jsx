@@ -11,13 +11,13 @@ const ConceptCapers = () => {
     return (
         <div className='bg-[#FEF6F0] overflow-hidden '>
 
-            <div className='px-6 lg:px-20'>
+            <div className='px-4 md:px-7 lg:px-20'>
                 <Header />
                 <Hero />
                 <LoremSlider />
             </div>
             <ParaText />
-            <div className='max-w-[1600px] mx-auto px-6 lg:px-20 pb-24'>
+            <div className='w-full pb-24'>
                 <Pricing />
                 <ForStudents />
                 <EducatePath />

@@ -15,7 +15,7 @@ const LoremSlider = () => {
         pauseOnHover: false,
     };
     return (
-        <div className="mb-4 py-11 border-4 border-[#161B32] border-t-0 ">
+        <div className="mb-4 py-5 md:py-11 border-4 border-[#161B32] border-t-0 ">
             <div className="slider-container flex-wrap">
                 <Slider {...settings}>
                     <div>
