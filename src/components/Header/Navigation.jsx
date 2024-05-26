@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-const Header = () => {
+const Navigation = () => {
     const [scrolling, setScrolling] = useState(false);
 
     useEffect(() => {
@@ -45,4 +45,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default Navigation;

@@ -1,5 +1,5 @@
 "use client"
-import CardSlider from './Slider';
+import CardSlider from './CardSlider';
 
 const HeroHeading = () => {
 

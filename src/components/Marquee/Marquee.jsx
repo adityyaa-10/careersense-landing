@@ -1,6 +1,6 @@
 import MarqueeSection1 from "./MarqueeSection1";
 import MarqueeSection2 from "./MarqueeSection2";
-const ParaText = () => {
+const Marquee = () => {
     return (
         <div className="py-6 md:py-24 tracking-tight text-gray-800 border-b-4 border-[#161B32]">
             <div className="w-full px-4 gap-2 text-center flex flex-wrap justify-center items-center max-w-[845px] mx-auto">
@@ -34,4 +34,4 @@ const ParaText = () => {
     );
 };
 
-export default ParaText;
+export default Marquee;
