@@ -1,10 +1,13 @@
-
 const MarqueeItem = ({ content, bgColor }) => {
-    return (
-        <div className={`${bgColor} inline-flex text-white rounded-3xl md:rounded-[64px] justify-center items-center  p-3 md:px-6 md:py-5`}>
-            <div className="tracking-tighter text-xl md:text-5xl leading-6 md:leading-[58.8px] font-semibold uppercase">{content}</div>
-        </div>
-    )
-}
+  return (
+    <div
+      className={`${bgColor} inline-flex items-center justify-center rounded-3xl p-3 text-white md:rounded-[64px] md:px-6 md:py-5`}
+    >
+      <div className="text-xl font-semibold uppercase leading-6 tracking-tighter md:text-5xl md:leading-[58.8px]">
+        {content}
+      </div>
+    </div>
+  );
+};
 
-export default MarqueeItem
+export default MarqueeItem;
